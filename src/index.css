@@ -117,3 +117,14 @@ button{
   color: #c0392b;
   font-weight: bold;
 }
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9fafb; 
+}
+
+.auth-page .container {
+  margin: 0; 
+}
