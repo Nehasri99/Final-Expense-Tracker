@@ -33,7 +33,8 @@ function Login() {
   };
 
   return (
-    <div className="container">
+    <div className="auth-page">
+      <div className="container">
       <h1>Login</h1>
       <form onSubmit={handleLogin}>
         <div>
@@ -50,6 +51,7 @@ function Login() {
         </span>
       </form>
       <ToastContainer />
+    </div>
     </div>
   );
 }
