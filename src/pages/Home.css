@@ -1,7 +1,4 @@
-/* ... (existing styles) ... */
 
-/* Header / user section */
-/* In src/pages/Home.css */
 
 .user-section {
     display: flex;
@@ -11,8 +8,6 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     background-color: #ffffff;
     border-radius: 12px;
-
-    /* --- Add these three lines --- */
     position: sticky;
     top: 0;
     z-index: 10;
@@ -251,7 +246,6 @@
     flex-direction: column;
     gap: 1.5rem;
 }
-/* In src/pages/Home.css - Add this at the bottom of the file */
 
 .tabs {
     display: flex;
@@ -286,12 +280,12 @@
     flex-direction: column;
     gap: 1.5rem;
 }
-/* In src/pages/Home.css - Add these styles */
+
 
 .home-container {
-    max-width: 1100px;  /* Set a maximum width for your dashboard */
-    margin: 2rem auto;  /* Center the container on the page with space on top/bottom */
-    padding: 0 1rem;    /* Add some padding on the sides for smaller screens */
+    max-width: 1100px;  
+    margin: 2rem auto;
+    padding: 0 1rem;   
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
