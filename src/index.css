@@ -1,100 +1,138 @@
-
 *,
 ::before,
-::after{
+::after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-label{
+label {
   font-size: 20px;
 }
 
 html,
-body{
+body {
   height: 100%;
   width: 100%;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9fafb; /* A light grey background for the page */
-    color: #1a202c;
+  font-family: Arial, sans-serif;
+  background-color: #f9fafb;
+  color: #1a202c;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.container{
+
+.container {
   background-color: #FFF;
-  padding: 32px 48px;
-  border-radius: 10px;
+  padding: 40px 60px;      
+  border-radius: 12px;
   width: 100%;
-  max-width: 400px;
-  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  max-width: 500px;       
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 0.2);
 }
-
-.container h1{
+.container input,
+.container button {
+  width: 100%;           
+}
+.container h1 {
   margin-bottom: 20px;
+  text-align: center; /* Centered the heading */
 }
 
-.container > form{
+.container > form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px; /* Increased gap for better spacing */
 }
-.container div{
+
+.container div {
   display: flex;
   flex-direction: column;
 }
 
-.container input{
+.container input {
   width: 100%;
-  font-size: 20px;
+  font-size: 16px; 
   padding: 10px;
-  border: none;
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
   outline: none;
-  border-bottom: 1px solid black;
 }
 
-.container input::placeholder{
+.container input::placeholder {
   font-size: 12px;
   font-style: italic;
+  color: #a0a0a0;
 }
 
-button{
-  background-color: blue;
+button {
+  background-color: blue; 
   border: none;
-  font-size: 15px;
+  font-size: 18px;
+  font-weight: bold;
   color: white;
   border-radius: 5px;
-  padding: 8px;
+  padding: 10px;
   cursor: pointer;
-  margin: 10px 0;
+  margin: 15px 0;
+  transition: background-color 0.3s ease;
 }
-/* Expense Tracker css*/
-.user-section{
-  display:flex;
+
+button:hover {
+  background-color: #357abd;
+}
+
+.container span {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.container span a {
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container span a:hover {
+  text-decoration: underline;
+}
+
+
+.user-section {
+  display: flex;
   justify-content: space-between;
 }
-.expense-list{
-  font-family:Arial,sans-serif;
+
+.expense-list {
+  font-family: Arial, sans-serif;
 }
-.expense-item{
-  display:flex;
-  justify-content:space-between;
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ccc;
 }
-.expense-description{
-  font-weight:bold;
+
+.expense-description {
+  font-weight: bold;
 }
-.delete-button{
+
+.delete-button {
   background-color: #e74c3c;
-  color:white;
-  border:none;
-  padding:4px;
-  font-size:15px;
-  cursor:pointer;
-  border-radius:3px;
+  color: white;
+  border: none;
+  padding: 4px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 3px;
 }
+
 .delete-button:hover {
   background-color: #c0392b;
 }
@@ -113,7 +151,7 @@ button{
   font-weight: bold;
 }
 
-.expense-amount{
+.expense-amount {
   color: #c0392b;
   font-weight: bold;
 }
